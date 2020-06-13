@@ -5,10 +5,17 @@ host = "localhost"
 port = 8080
 
 s.connect((host,port))
-message = s.recv(1024)
+fileName = "test.txt"
+s.send(fileName.encode())
+readFile = s.recv(1024)
+print(readFile.decode())
 
-while message:
-    print("Message", message.decode())
-    message = s.recv(1024)
+
+# if you wanna reseve massage uncomment this part 
+# message = s.recv(1024)
+
+# while message:
+#     print("Message", message.decode())
+#     message = s.recv(1024)
 
 s.close()
