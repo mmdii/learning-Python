@@ -5,8 +5,8 @@ port=587
 
 message = "hey this is how i learn python"
 
-userName='test.mmdii@gmail.com'
-password='0019786409'
+userName='email username'
+password='email password'
 
 _from = userName
 _to = userName
