@@ -7,9 +7,9 @@ from email import encoders
 host='smtp.gmail.com'
 port=587
 
-email_from = 'test.mmdii@gmail.com'
-email_password = '0019786409'
-email_to = 'mohammad.mohammadii1997@gmail.com'
+email_from = 'emali from'
+email_password = 'password'
+email_to = 'email to'
 email_subject = "Some random names"
 
 message = MIMEMultipart()
